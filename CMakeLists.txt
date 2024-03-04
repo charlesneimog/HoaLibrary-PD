@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.15)
 
-set(CMAKE_SUPPRESS_REGENERATION true)
-set(CMAKE_MACOSX_RPATH Off)
-set(CMAKE_OSX_DEPLOYMENT_TARGET 10.4)
-set(CMAKE_OSX_ARCHITECTURES "i386;x86_64")
+# set(CMAKE_SUPPRESS_REGENERATION true)
+# set(CMAKE_MACOSX_RPATH Off)
+# set(CMAKE_OSX_DEPLOYMENT_TARGET 10.4)
+# set(CMAKE_OSX_ARCHITECTURES "i386;x86_64")
 
 include(pd.build/pd.cmake)
 project(hoa)
@@ -49,8 +49,8 @@ file(GLOB hoa_pd_2d_rotate_tilde_sources ${hoa_pd_sources} ${hoa_pd_path}/2d/hoa
 add_pd_external(hoa.2d.rotate_tilde hoa.2d.rotate~ "${hoa_pd_2d_rotate_tilde_sources}")
 file(GLOB hoa_pd_2d_projector_tilde_sources ${hoa_pd_sources} ${hoa_pd_path}/2d/hoa.2d.projector_tilde.cpp)
 add_pd_external(hoa.2d.projector_tilde hoa.2d.projector~ "${hoa_pd_2d_projector_tilde_sources}")
-file(GLOB hoa_pd_2d_recomposer_tilde_sources ${hoa_pd_sources} ${hoa_pd_path}/2d/hoa.2d.recomposer_tilde.cpp)
-add_pd_external(hoa.2d.recomposer_tilde hoa.2d.recomposer~ "${hoa_pd_2d_recomposer_tilde_sources}")
+# file(GLOB hoa_pd_2d_recomposer_tilde_sources ${hoa_pd_sources} ${hoa_pd_path}/2d/hoa.2d.recomposer_tilde.cpp)
+# add_pd_external(hoa.2d.recomposer_tilde hoa.2d.recomposer~ "${hoa_pd_2d_recomposer_tilde_sources}")
 
 # 3D Part
 file(GLOB hoa_pd_3d_encoder_tilde_sources ${hoa_pd_sources} ${hoa_pd_path}/3d/hoa.3d.encoder_tilde.cpp)

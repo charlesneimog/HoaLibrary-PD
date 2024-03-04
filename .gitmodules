@@ -1,9 +1,3 @@
-[submodule "pd.build"]
-	path = pd.build
-	url = https://pierreguillot@github.com/pierreguillot/pd.build.git
 [submodule "hoa.library"]
-	path = hoa.library
+	path = Libraries/hoa
 	url = https://pierreguillot@github.com/CICM/HoaLibrary-Light.git
-[submodule "pd"]
-	path = pd
-	url = https://pierreguillot@github.com/pure-data/pure-data.git
